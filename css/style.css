@@ -17,6 +17,10 @@
   background-color: #000814;
 }
 
+.nav-color {
+  background-color: #fff;
+}
+
 .navbar .container-fluid .navbar-brand {
   color: white;
   font-weight: 700;
@@ -31,7 +35,7 @@
 
 .navbar-nav .nav-item .nav-link {
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -39,6 +43,9 @@
   background-color: #ffc300;
   font-weight: 900;
   border-radius: 0.2rem;
+}
+
+.navbar-toggler-icon {
 }
 
 footer {
@@ -82,7 +89,8 @@ footer p {
 .container-fora .heading {
   text-align: center;
   padding-bottom: 1rem;
-  color: #fff;
+  color: #ffc300;
+  font-weight: 900;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 50px;
 }
@@ -121,8 +129,8 @@ footer p {
 .container-fora .box-container .box .btn-galery {
   margin-top: 1rem;
   display: inline-block;
-  background: #333;
-  color: #fff;
+  background: #ffc300;
+  color: #000814;
   font-size: 1.1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -142,4 +150,22 @@ footer p {
   .container-fora {
     padding: 20px;
   }
+}
+
+.btn-outline-price {
+  border: 1px solid #000814;
+}
+
+.btn-price,
+.bg-price {
+  background-color: #000814;
+  color: #fff;
+}
+
+.border-price {
+  border: 1px solid #000814;
+}
+
+.border-price {
+  border: 1px solid #000814;
 }
