@@ -408,3 +408,15 @@ footer p {
 .row {
   justify-content: center;
 }
+
+input.form-control {
+    text-align: center;
+}
+
+select{
+	text-align: center;
+}
+
+.op{
+	text-align: center;
+}
