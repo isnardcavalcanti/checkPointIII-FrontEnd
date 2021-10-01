@@ -1,0 +1,131 @@
+@import url(./partials/_variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+.navbar {
+  background-color: #000814;
+}
+
+.nav-color {
+  background-color: #fff;
+}
+
+.navbar .container-fluid .navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+.navbar .container-fluid .navbar-brand::first-letter {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 400;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #003566;
+  background-color: #ffc300;
+  font-weight: 900;
+  border-radius: 0.2rem;
+}
+
+
+body {
+  background-color: #FFD60A;
+}
+
+.album {
+  background-color: #001D3D !important;
+}
+
+.card.shadow-sm { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bd-placeholder-img {
+  
+  width: 250px;
+  height: 250px;
+  border: 2px solid #003566;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.bd-placeholder-img img {
+  height: 250px;
+  width: 250px;
+  object-fit:inherit;
+  transition: all .3s ease-in-out;
+}
+
+.bd-placeholder-img img:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.icon-body {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.icon-body > a {
+  margin: 0.25rem;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+  transition-property: transform, box-shadow;
+}
+
+.icon-body img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem -0.25rem #003566;
+}
+
+.icon {
+  --dimensions: 1.75rem;
+  width: var(--dimensions);
+  height: var(--dimensions);
+}
+
+footer {
+  background-color: #000814;
+}
+
+footer .nav .nav-item .nav-link {
+  color: white;
+  font-weight: 700;
+}
+
+footer .nav .nav-item .nav-link:hover {
+  color: #003566;
+  background-color: #ffc300;
+  font-weight: 900;
+  border-radius: 0.2rem;
+}
+
+footer p {
+  color: white;
+}
