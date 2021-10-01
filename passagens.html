@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pagamento</title>
+  </head>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DH Tour</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/passagens.html">Passagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotéis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body class="bg-light">
+    <div class="container container2">
+      <main class="mainclass">
+        <div class="py-5 text-center">
+          <!-- <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+          <h2>Pagamento</h2>
+          <p class="lead">
+            Insira seus dados de pagamento para finalizarmos sua reserva e dar o primeiro passo para suas férias dos sonhos!
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Descrição do Pedido</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Passagem</h6>
+                  <small class="text-muted">SDU - POA</small>
+                </div>
+                <span class="text-muted">R$699,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Hospedagem</h6>
+                  <small class="text-muted">Sky Palace Hotel (2 diárias)</small>
+                </div>
+                <span class="text-muted">R$334,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Translado</h6>
+                  <small class="text-muted">Porto Alegre - Gramado</small>
+                </div>
+                <span class="text-muted">R$120,00</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">Cupom Promocional</h6>
+                  <small>GANHEI50</small>
+                </div>
+                <span class="text-success">-R$50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (R$)</span>
+                <strong>R$ 1103,00</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Cupom Promocional" />
+                <button type="submit" class="btn btn-secondary">Confirmar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Dados Pessoais</h4>
+            <form class="needs-validation was-validated" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                  <input type="email" class="form-control" id="email" placeholder="seuemail@email.com" />
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="address" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label">Complemento <span class="text-muted">(Opicional)</span></label>
+                  <input type="text" class="form-control" id="address2" />
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">País</label>
+                  <select class="form-select" id="country" required="">
+                    <option value="">Selecione...</option>
+                    <option>Brasil</option>
+                    <option>Outros</option>
+                  </select>
+                  <div class="invalid-feedback">Selecione Uma opção válida.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Selecione...</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RR</option>
+                    <option>RO</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                  </select>
+                  <div class="invalid-feedback">Selecione Uma opção válida.</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address" />
+                <label class="form-check-label" for="same-address">Endereço Pessoal é o mesmo endereço de cobrança</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info" />
+                <label class="form-check-label" for="save-info">Salvar informações para próxima compra.</label>
+              </div>
+
+              <hr class="my-4" />
+
+              <h4 class="mb-3">Pagamento</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="" />
+                  <label class="form-check-label" for="credit">Cartão de crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="" />
+                  <label class="form-check-label" for="debit">Boleto</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="" />
+                  <label class="form-check-label" for="paypal">Pix</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Titular do cartão</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required="" />
+                  <small class="text-muted">Nome completo como aparece no cartão</small>
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Número do cartão</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Data de validade</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">Código de segurança</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" />
+                  <div class="invalid-feedback">Campo obrigatório</div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+      <p class="col-md-4 mb-0">&copy; 2021 DH TOUR</p>
+
+      <div class="midias">
+        <a href="#" target="_blank"><img src="./img/instagram.png" width="25px" /></a>
+        <a href="#" target="_blank"><img src="./img/youtube.png" width="25px" /></a>"
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form-validation.js"></script>
+  </body>
+</html>
