@@ -45,16 +45,15 @@
   border-radius: 0.2rem;
 }
 
-
 body {
-  background-color: #FFD60A;
+  background-color: #ffd60a;
 }
 
 .album {
-  background-color: #001D3D !important;
+  background-color: #001d3d !important;
 }
 
-.card.shadow-sm { 
+.card.shadow-sm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +62,9 @@ body {
 }
 
 .bd-placeholder-img {
-  
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
   width: 250px;
   height: 250px;
   border: 2px solid #003566;
@@ -74,12 +75,12 @@ body {
 .bd-placeholder-img img {
   height: 250px;
   width: 250px;
-  object-fit:inherit;
-  transition: all .3s ease-in-out;
+  object-fit: inherit;
+  transition: all 0.3s ease-in-out;
 }
 
 .bd-placeholder-img img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-body {
@@ -95,7 +96,7 @@ body {
 .icon-body > a {
   margin: 0.25rem;
   border-radius: 50%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transition-property: transform, box-shadow;
 }
 
