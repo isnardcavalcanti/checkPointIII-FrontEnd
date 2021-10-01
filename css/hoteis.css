@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #000814;
+}
+
+.nav-color {
+  background-color: #fff;
+}
+
+.navbar .container-fluid .navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+.navbar .container-fluid .navbar-brand::first-letter {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 400;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #003566;
+  background-color: #ffc300;
+  font-weight: 900;
+  border-radius: 0.2rem;
+}
+
+#banner {
+  padding: 200px;
+  background-image: url("../img/accommodation-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow: 2px 2px 5px grey;
+}
+
+#banner h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+  /* color: #003566; */
+  color: blue;
+  font-size: 32px;
+}
+
+#carousels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 40px;
+  background-image: url("../img/vacation-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.carousel-indicators {
+  margin-bottom: 20rem;
+}
+
+.sctn {
+  margin: 50px 0;
+  color: black;
+  text-align: center;
+  box-sizing: content-box;
+  width: 300px;
+  height: 530px;
+  border: 3px transparent;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.sctn:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.03);
+  /*     box-sizing: border-box;
+    border: 3px solid indianred; */
+}
+
+.carousel-inner {
+  height: 530px;
+}
+
+.sctn h2 {
+  margin-top: 0.5rem;
+}
+
+#box-image-container {
+  height: 225px;
+  width: 300px;
+  overflow: hidden;
+}
+
+#box-image-container img {
+  max-height: 225px;
+  max-width: 100%;
+}
+
+.carousel-caption {
+  text-shadow: 2px 2px 5px gray;
+  bottom: 10.25rem;
+}
+
+#diarias {
+  margin-top: 70px;
+}
+
+.carousel-item button {
+  height: 400px;
+}
+
+footer {
+  background-color: #000814;
+}
+
+footer .nav .nav-item .nav-link {
+  color: white;
+  font-weight: 700;
+}
+
+footer .nav .nav-item .nav-link:hover {
+  color: #003566;
+  background-color: #ffc300;
+  font-weight: 900;
+  border-radius: 0.2rem;
+}
+
+footer p {
+  color: white;
+}
